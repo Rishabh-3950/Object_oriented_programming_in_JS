@@ -30,3 +30,19 @@ function logProperty(propertyName){
 
 }
 logProperty("age");
+
+//update the existing properties
+users["names1"]["firstName"]="Alice";
+console.log(users.names1);
+
+users.names1.firstName="Alice_new";
+console.log(users.names1);
+
+//set new properties
+users.hobby=["Listening music","cooking"];
+
+users.fareWell=function() {
+    console.log("Good bye!!");
+};
+console.log(users);
+users.fareWell();
